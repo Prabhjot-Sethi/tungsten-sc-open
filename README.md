@@ -1,11 +1,11 @@
-# Open Contrail neccessary ports on AWS
+# Open Tungsten Fabric neccessary ports on AWS
 
-This tool alows to automatically open ports neccessary for Contrail on AWS in every Security Group attached do cluster resources.
+This tool alows to automatically open ports neccessary for Tungsten Fabric on AWS in every Security Group attached do cluster resources.
 
 ## Build
 
 In order to build this tool use `go build .` command.
-Afterwards, you should have binary *contrail-sc-open* which is compiled tool.
+Afterwards, you should have binary *tungsten-sc-open* which is compiled tool.
 
 ## Requirements
 
@@ -16,7 +16,7 @@ In order to setup that follow these [docs](https://docs.aws.amazon.com/cli/lates
 
 In order to use it run:
 ```
-./contrail-sc-open -cluster-name <name of your Openshift cluster> -region <AWS region where cluster is located>
+./tungsten-sc-open -cluster-name <name of your Openshift cluster> -region <AWS region where cluster is located>
 ```
 
-Tool will log all security groups found and status whether it successfuly added new rules for Contrail ports.
+Tool will log all security groups found and status whether it successfuly added new rules for Tungsten Fabric ports.

@@ -46,6 +46,7 @@ var ports = [...]port{
 	{2000, 3888, protocolTCP},
 	{8053, 8053, protocolUDP},
 	{4789, 4789, protocolUDP},
+	{6635, 6635, protocolUDP},
 }
 
 func setRules(svc *ec2.EC2, group string) error {

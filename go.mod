@@ -1,4 +1,4 @@
-module openshift.operator.contrail/contrail-sc-open
+module openshift.operator.tungsten/tungsten-sc-open
 
 go 1.14
 
